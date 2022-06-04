@@ -1,0 +1,43 @@
+{
+    "definition": {
+        "openapi": "3.0.0",
+        "info": {
+            "title": "DataGames API",
+            "version": "1.0.0",
+            "description": "Proyecto derivado del curso de NodeJS en Escalab",
+            "termsOfService": "http://example.com/terms/",
+            "contact": {
+                "name": "Api Support",
+                "url": "https://escalab.academy/",
+                "email": "diana.ordonez.marin@gmail.com"
+            }
+        },
+        "servers": [
+            {
+                "url": "http://localhost:8002/game",
+                "description": "My API Documentation Developer Server"
+            },
+            {
+                "url": "http://56785212.svr.sony.es/",
+                "description": "Production Server"
+            }
+        ],
+        "security": [
+            {
+                "ApiKey": []
+            }
+        ],
+        "components": {
+            "securitySchemes": {
+                "ApiKey": {
+                    "type": "apiKey",
+                    "in": "header",
+                    "name": "authtoken"
+                }
+            }
+        }
+    },
+    "apis": [
+        "./routes/*.js"
+    ]
+}

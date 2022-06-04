@@ -1,0 +1,33 @@
+{
+  "name": "serverprueba",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "develop": "nodemon",
+    "start": "node server.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.19.2",
+    "cloudinary": "1.23.0",
+    "cors": "2.8.5",
+    "dotenv": "^16.0.1",
+    "express": "4.17.1",
+    "express-handlebars": "^6.0.6",
+    "express-validator": "^6.14.0",
+    "firebase": "^9.8.1",
+    "firebase-admin": "^10.2.0",
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "5.10.2",
+    "redis": "3.1.2",
+    "slugify": "1.4.5",
+    "swagger-jsdoc": "6.0.2",
+    "swagger-ui-express": "4.1.6"
+  },
+  "devDependencies": {
+    "morgan": "1.10.0",
+    "nodemon": "2.0.12"
+  }
+}
